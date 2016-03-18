@@ -785,6 +785,13 @@ img[src="assets/images/blank.gif"] {
   display: inline-block;
   text-transform: capitalize;
 }
+.top-bar ul > li a:hover,
+.top-bar ul > li a:active
+{
+  color: #f04e46;
+}
+
+
 /*===================================================================================*/
 /*  Header
 /*===================================================================================*/
@@ -863,8 +870,7 @@ header .top-search-holder .search-area .search-field {
   border-radius: 5px 0 0 5px;
   border: none;
   width: 47.5%;
-  padding: 10px;
-  margin: 3px 0 4px 0;
+  padding: 13px;
 }
 header .top-search-holder .search-area .search-button {
   float: right;
@@ -2206,8 +2212,8 @@ header .main-menu ul>li>a:hover{
 /*===================================================================================*/
 .shipping-holder{
   padding-top: 20px;
+  margin-top:2%;
   padding-bottom: 20px;
-  border-bottom: 1px solid #f0f0f0;
   height: 80px;
 }
 .shipping-item{
@@ -2221,6 +2227,8 @@ header .main-menu ul>li>a:hover{
   display: flex;
   justify-content: center;
   align-items: center;
+  color:#ADADAD;
+  font-size: 27px;
 }
 .shipping-holder .shipping-item .thumb img{
   
@@ -4768,7 +4776,6 @@ header .main-menu ul>li>a:hover{
   width: 73px;
 }
 #footer .sub-form-row {
-  margin: 30px 0;
   position: relative;
   z-index: 200;
 }
@@ -4802,9 +4809,7 @@ header .main-menu ul>li>a:hover{
   text-transform: uppercase;
   background-color:#f04e46; 
 }
-#footer .link-list-row {
-  margin: 75px 0 72px 0;
-}
+
 #footer  .title
 {
   font-size: 18px;
@@ -4837,8 +4842,11 @@ header .main-menu ul>li>a:hover{
 #footer .link-list-row .link-widget {
   display: inline-block;
   vertical-align: top;
-  width: 170px;
+  width: 30%;
   margin: 0 0 0 15px;
+}
+#footer .link-list-row .link-widget a:hover {
+ color:#f04e46;
 }
 #footer .link-list-row .link-widget h3 {
   padding-bottom: 32px;
@@ -5539,11 +5547,20 @@ select.top-drop-menu {
 }
 .angle-carousel a:hover{
   padding: 0;
-  margin: 0;
+  margin: 0;D9D9D9
   color:#3c3c3c;
 }
 .angle-carousel a:active{
   padding: 0;
   margin: 0;
   color:#5e5e5e;
+}
+::-moz-selection { /* Code for Firefox */
+    color: white;
+    background: #009bcb;
+}
+
+::selection {
+    color: white; 
+    background: #009bcb;
 }

@@ -97,7 +97,8 @@
             
             autoPlay: 5000,
             stopOnHover: true,
-            navigation: true,
+            URLhashListener:true,
+            startPosition: 'URLHash',
             pagination: true,
             singleItem: true,
             addClassActive: true,
